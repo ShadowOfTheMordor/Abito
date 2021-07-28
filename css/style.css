@@ -4,10 +4,15 @@ body {
     color: #0A143A; /* общий цвет текста #0A143A*/
 }
 
-.header {
+.container {
     max-width: 1146px; /* максимальная ширина */
     margin: auto; /* автоматическое выравнивание по середине */
+}
+
+.header {
     padding-top: 30px; /* внутренний отступ сверху 30 пикселей */
+    padding-bottom: 30px; /* внутренний отступ снизу 30 пикселей */
+    margin-bottom: 12px; /* внешний отступ снизу*/
 }
 
 .navbar {
@@ -92,4 +97,123 @@ body {
 
 .search-button-text {
     margin-left: 5px; /*внешний отступ для текста кнопки 5 пикс */
+}
+
+.page-content {
+    display: grid; /* более гибкая разметка, чем flex*/
+    grid-template-columns: 9fr 3fr; /* из 12 колоночной разметки(стд) - левая 9, правая 3
+        (по дизайн-макету*/
+    grid-column-gap: 30px; /* расстояние между 2мя колонками*/
+}
+
+.card-image {
+    border-radius: 10px; /* скругление */
+    width: 264px; /* ширина */
+    height: 178px; /* высота */
+    object-fit: cover; /* для обрезания картинки, если не тот размер */
+}
+
+.cards {
+    display: flex; /* гибкий блок */
+    flex-wrap: wrap; /* переносит если не вмещаются */
+    /*justify-content: space-between; /* разбросать элементы по краям*/
+
+}
+
+.card {
+    margin-bottom: 20px; /* внешний отступ вниз 20px */
+    max-width: 264px; /* максимальная ширина */
+    max-height: 279px; /* максимальная высота */
+}
+.card:not(:nth-child(3n)) {
+    margin-right: 20px; /* внешний отступ справа*/
+
+}
+
+.card-title {
+    font-size: 16px; /* размер шрифта*/
+    line-height: 19px; /* высота строки*/
+    color: #256EEB; /* цвет текста */
+    margin-top: 12px; /* внешний отступ сверху*/
+    margin-bottom: 5px; /* внешний отступ снизу*/
+}
+
+.card-header {
+    display: flex; /* гибкий блок */
+    justify-content: space-between; /* разбросать элементы по краям*/
+    align-items: center; /* выровнять по вертикали */
+}
+
+.like {
+    background-color: #fff; /* цвет фона */
+    border: none; /* убирается обводка(граница) */
+    cursor: pointer; /* указатель */
+    margin-left: 15px; /* отступ слева*/
+}
+
+.card-link {
+    text-decoration: none; /* убирает дефолтное оформление*/
+}
+
+.card-price {
+    font-size: 16px; /* размер шрифта */
+    line-height: 19px; /* высота строки */
+    color: #0A143A; /* цвет текста */
+    margin-bottom: 10px; /* внешний отступ снизу */
+    display: block; /* блочный блок */
+}
+
+.card-text {
+    font-size: 14px; /* размер шрифта */
+    line-height: 16px; /* высота строки */
+    color: #C4C4C4; /* цвет текста */
+    margin-bottom: 4px; /* внешний отступ снизу*/
+    margin-top: 0; /* внешний отступ сверху */
+}
+
+.sidebar .page-title {
+    font-size: 18px; /* размер шрифта */
+    line-height: 21px; /* высота строки */
+}
+
+.service {
+    margin-bottom: 25px; /* внешний отступ вниз */
+}
+
+.service-title {
+    margin-top: 7px; /* внешний отступ сверху */
+    margin-bottom: 5px; /* внешний отступ снизу*/
+    font-size: 14px; /* размер шрифта */
+    line-height: 16px; /* высота строки */
+    color: #0A143A; /* цвет текста */
+}
+
+.service-text {
+    font-size: 14px; /* размер шрифта */
+    line-height: 16px; /* высота строки */
+    color: #0A143A; /* цвет текста */
+    max-width: 217px; /* максимальная ширина */
+    margin-right: 14px; /* внешний отступ справа*/
+}
+
+.footer-menu {
+    margin: 0; /* обнуляем отступы */
+    padding: 0; /* обнуляем отступы */
+    list-style: none; /* убираем дефолтный стиль списка */
+    margin-bottom: 16px; /* внешний отступ снизу*/
+}
+
+.footer-text {
+    display: inline-block; /* хз, для работы отступа */
+    font-size: 14px; /* размер шрифта */
+    line-height: 16px; /* высота строки */
+    color: #C4C4C4; /* цвет текста */
+    margin-bottom: 5px; /* внешний отступ снизу*/
+}
+
+.footer-link {
+    display: inline-block;
+    color: inherit; /* наследование цвета текста от родителя*/
+    text-decoration: none; /* убираем дефолтное оформление */
+    margin-bottom: 5px; /* внешний отступ снизу*/
 }
