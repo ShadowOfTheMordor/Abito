@@ -1,219 +1,463 @@
 body {
-    font-family: 'Roboto', sans-serif; /* фонты*/
-    font-size: 14px; /* общий размер фонта */
-    color: #0A143A; /* общий цвет текста #0A143A*/
+    font-family: 'Roboto', sans-serif;
+    /* фонты*/
+    font-size: 14px;
+    /* общий размер фонта */
+    color: #0A143A;
+    /* общий цвет текста #0A143A*/
 }
 
 .container {
-    max-width: 1146px; /* максимальная ширина */
-    margin: auto; /* автоматическое выравнивание по середине */
+    max-width: 1146px;
+    /* максимальная ширина */
+    margin: auto;
+    /* автоматическое выравнивание по середине */
 }
 
 .header {
-    padding-top: 30px; /* внутренний отступ сверху 30 пикселей */
-    padding-bottom: 30px; /* внутренний отступ снизу 30 пикселей */
-    margin-bottom: 12px; /* внешний отступ снизу*/
+    padding-top: 30px;
+    /* внутренний отступ сверху 30 пикселей */
+    padding-bottom: 30px;
+    /* внутренний отступ снизу 30 пикселей */
+    margin-bottom: 12px;
+    /* внешний отступ снизу*/
 }
 
 .navbar {
-    display: flex; /* гибкий блок */
-    align-items: center; /* выравнивание по вертикали по центру*/
-    justify-content: space-between; /* разбросать элементы по краям*/
-    margin-bottom: 24px; /* внешний отступ снизу 24 px (от строки поиска) */
+    display: flex;
+    /* гибкий блок */
+    align-items: center;
+    /* выравнивание по вертикали по центру*/
+    justify-content: space-between;
+    /* разбросать элементы по краям*/
+    margin-bottom: 24px;
+    /* внешний отступ снизу 24 px (от строки поиска) */
 }
 
 /* меню в шапке*/
 .navbar-menu {
-    margin-right: auto; /* автоматический отступ справа */
+    margin-right: auto;
+    /* автоматический отступ справа */
 
 }
 
 .menu {
-    list-style: none; /* отключаем точки в списке*/
-    margin: 0; /* обнуляем отступы*/
-    padding-left: 22px; /* внутренний отступ слева*/
-    padding-right: 22px; /* внутренний отступ справа*/
-    display: flex; /* гибкий блок, в строку преобразует*/
+    list-style: none;
+    /* отключаем точки в списке*/
+    margin: 0;
+    /* обнуляем отступы*/
+    padding-left: 22px;
+    /* внутренний отступ слева*/
+    padding-right: 22px;
+    /* внутренний отступ справа*/
+    display: flex;
+    /* гибкий блок, в строку преобразует*/
 
 }
 
 /* применяется для всех элементов, кроме последнего*/
 .menu-item:not(:last-child) {
-    margin-right: 14px; /* внешний отступ справа*/
+    margin-right: 14px;
+    /* внешний отступ справа*/
 }
 
 .menu-link {
-    text-decoration: none; /* убираем подчеркивание*/
-    color: inherit; /* наследование цвета текста от родителя*/
+    text-decoration: none;
+    /* убираем подчеркивание*/
+    color: inherit;
+    /* наследование цвета текста от родителя*/
 }
 
 /* кнопки*/
 .button {
-    text-decoration: none; /* убирает дефолтное оформление*/
-    display: inline-block; /* убирает отступы */
-    padding: 10px 15px; /* сверху и снизу 10 пикселей, по краям - 15*/
-    cursor: pointer; /* курсор-указатель*/
+    text-decoration: none;
+    /* убирает дефолтное оформление*/
+    display: inline-block;
+    /* убирает отступы */
+    padding: 10px 15px;
+    /* сверху и снизу 10 пикселей, по краям - 15*/
+    cursor: pointer;
+    /* курсор-указатель*/
 }
 
 .button-link {
-    color:inherit; /* наследование цвета текста от родителя*/
+    color: inherit;
+    /* наследование цвета текста от родителя*/
 }
 
 .button-primary {
-    background: #256EEB; /* цвет фона*/
-    border-radius: 5px; /* скругление*/
-    color: #FFFFFF; /* цвет текста */
+    background: #256EEB;
+    /* цвет фона*/
+    border-radius: 5px;
+    /* скругление*/
+    color: #FFFFFF;
+    /* цвет текста */
 }
 
 .search-panel {
-    height: 50px; /* высота панели поиска - 50 пикселей */
-    background: #256EEB; /* фоновый цвет */
-    border-radius: 5px; /* скругление*/
-    display: flex; /* гибкий блок */
-    padding: 3px; /* внутренний отступ 3 пикселя, со всех сторон*/
+    height: 50px;
+    /* высота панели поиска - 50 пикселей */
+    background: #256EEB;
+    /* фоновый цвет */
+    border-radius: 5px;
+    /* скругление*/
+    display: flex;
+    /* гибкий блок */
+    padding: 3px;
+    /* внутренний отступ 3 пикселя, со всех сторон*/
 }
 
 .search-input {
-    flex-grow: 1; /* растягивается на все свободное место*/
-    background: #FFFFFF; /* цвет фона */
-    border-radius: 5px; /* скругление */
-    border: none; /* убирается обводка(граница) */
-    padding-left: 22px; /* внутренний отступ слева 22 пикс */
-    padding-right: 22px; /* такой же отступ справа */
+    flex-grow: 1;
+    /* растягивается на все свободное место*/
+    background: #FFFFFF;
+    /* цвет фона */
+    border-radius: 5px;
+    /* скругление */
+    border: none;
+    /* убирается обводка(граница) */
+    padding-left: 22px;
+    /* внутренний отступ слева 22 пикс */
+    padding-right: 22px;
+    /* такой же отступ справа */
 }
 
 .search-button {
-    background: #256EEB; /* цвет фона*/
-    padding: 15px 20px; /* отступ сверху-снизу 15 px , слева справа 20 px */
-    border: none;    /* убирается обводка(граница) */
-    color: #FFFFFF; /* цвет текста */
-    padding-left: 20px; /* внутренний отступ справа*/
-    padding-right: 17px; /* из-за границы в 3px*/
-/*    padding-top: 16px; /*внутренний отступ сверху */
-/*    padding-bottom: 15px; /* внутренний отступ снизу */
-    display: flex; /* гибкий блок */
-    align-items: center; /* выровнять по центру по вертикали*/
+    background: #256EEB;
+    /* цвет фона*/
+    padding: 15px 20px;
+    /* отступ сверху-снизу 15 px , слева справа 20 px */
+    border: none;
+    /* убирается обводка(граница) */
+    color: #FFFFFF;
+    /* цвет текста */
+    padding-left: 20px;
+    /* внутренний отступ справа*/
+    padding-right: 17px;
+    /* из-за границы в 3px*/
+    /*    padding-top: 16px; /*внутренний отступ сверху */
+    /*    padding-bottom: 15px; /* внутренний отступ снизу */
+    display: flex;
+    /* гибкий блок */
+    align-items: center;
+    /* выровнять по центру по вертикали*/
 }
 
 .search-button-text {
-    margin-left: 5px; /*внешний отступ для текста кнопки 5 пикс */
+    margin-left: 5px;
+    /*внешний отступ для текста кнопки 5 пикс */
 }
 
 .page-content {
-    display: grid; /* более гибкая разметка, чем flex*/
-    grid-template-columns: 9fr 3fr; /* из 12 колоночной разметки(стд) - левая 9, правая 3
+    display: grid;
+    /* более гибкая разметка, чем flex*/
+    grid-template-columns: 9fr 3fr;
+    /* из 12 колоночной разметки(стд) - левая 9, правая 3
         (по дизайн-макету*/
-    grid-column-gap: 30px; /* расстояние между 2мя колонками*/
+    grid-column-gap: 30px;
+    /* расстояние между 2мя колонками*/
 }
 
 .card-image {
-    border-radius: 10px; /* скругление */
-    width: 264px; /* ширина */
-    height: 178px; /* высота */
-    object-fit: cover; /* для обрезания картинки, если не тот размер */
+    border-radius: 10px;
+    /* скругление */
+    width: 264px;
+    /* ширина */
+    height: 178px;
+    /* высота */
+    object-fit: cover;
+    /* для обрезания картинки, если не тот размер */
 }
 
 .cards {
-    display: flex; /* гибкий блок */
-    flex-wrap: wrap; /* переносит если не вмещаются */
+    display: flex;
+    /* гибкий блок */
+    flex-wrap: wrap;
+    /* переносит если не вмещаются */
     /*justify-content: space-between; /* разбросать элементы по краям*/
 
 }
 
 .card {
-    margin-bottom: 20px; /* внешний отступ вниз 20px */
-    max-width: 264px; /* максимальная ширина */
-    max-height: 279px; /* максимальная высота */
+    margin-bottom: 20px;
+    /* внешний отступ вниз 20px */
+    max-width: 264px;
+    /* максимальная ширина */
+    max-height: 279px;
+    /* максимальная высота */
 }
+
 .card:not(:nth-child(3n)) {
-    margin-right: 20px; /* внешний отступ справа*/
+    margin-right: 20px;
+    /* внешний отступ справа*/
 
 }
 
 .card-title {
-    font-size: 16px; /* размер шрифта*/
-    line-height: 19px; /* высота строки*/
-    color: #256EEB; /* цвет текста */
-    margin-top: 12px; /* внешний отступ сверху*/
-    margin-bottom: 5px; /* внешний отступ снизу*/
+    font-size: 16px;
+    /* размер шрифта*/
+    line-height: 19px;
+    /* высота строки*/
+    color: #256EEB;
+    /* цвет текста */
+    margin-top: 12px;
+    /* внешний отступ сверху*/
+    margin-bottom: 5px;
+    /* внешний отступ снизу*/
 }
 
 .card-header {
-    display: flex; /* гибкий блок */
-    justify-content: space-between; /* разбросать элементы по краям*/
-    align-items: center; /* выровнять по вертикали */
+    display: flex;
+    /* гибкий блок */
+    justify-content: space-between;
+    /* разбросать элементы по краям*/
+    align-items: center;
+    /* выровнять по вертикали */
 }
 
 .like {
-    background-color: #fff; /* цвет фона */
-    border: none; /* убирается обводка(граница) */
-    cursor: pointer; /* указатель */
-    margin-left: 15px; /* отступ слева*/
+    background-color: #fff;
+    /* цвет фона */
+    border: none;
+    /* убирается обводка(граница) */
+    cursor: pointer;
+    /* указатель */
+    margin-left: 15px;
+    /* отступ слева*/
 }
 
 .card-link {
-    text-decoration: none; /* убирает дефолтное оформление*/
+    text-decoration: none;
+    /* убирает дефолтное оформление*/
 }
 
 .card-price {
-    font-size: 16px; /* размер шрифта */
-    line-height: 19px; /* высота строки */
-    color: #0A143A; /* цвет текста */
-    margin-bottom: 10px; /* внешний отступ снизу */
-    display: block; /* блочный блок */
+    font-size: 16px;
+    /* размер шрифта */
+    line-height: 19px;
+    /* высота строки */
+    color: #0A143A;
+    /* цвет текста */
+    margin-bottom: 10px;
+    /* внешний отступ снизу */
+    display: block;
+    /* блочный блок */
 }
 
 .card-text {
-    font-size: 14px; /* размер шрифта */
-    line-height: 16px; /* высота строки */
-    color: #C4C4C4; /* цвет текста */
-    margin-bottom: 4px; /* внешний отступ снизу*/
-    margin-top: 0; /* внешний отступ сверху */
+    font-size: 14px;
+    /* размер шрифта */
+    line-height: 16px;
+    /* высота строки */
+    color: #C4C4C4;
+    /* цвет текста */
+    margin-bottom: 4px;
+    /* внешний отступ снизу*/
+    margin-top: 0;
+    /* внешний отступ сверху */
 }
 
 .sidebar .page-title {
-    font-size: 18px; /* размер шрифта */
-    line-height: 21px; /* высота строки */
+    font-size: 18px;
+    /* размер шрифта */
+    line-height: 21px;
+    /* высота строки */
 }
 
 .service {
-    margin-bottom: 25px; /* внешний отступ вниз */
+    margin-bottom: 25px;
+    /* внешний отступ вниз */
 }
 
 .service-title {
-    margin-top: 7px; /* внешний отступ сверху */
-    margin-bottom: 5px; /* внешний отступ снизу*/
-    font-size: 14px; /* размер шрифта */
-    line-height: 16px; /* высота строки */
-    color: #0A143A; /* цвет текста */
+    margin-top: 7px;
+    /* внешний отступ сверху */
+    margin-bottom: 5px;
+    /* внешний отступ снизу*/
+    font-size: 14px;
+    /* размер шрифта */
+    line-height: 16px;
+    /* высота строки */
+    color: #0A143A;
+    /* цвет текста */
 }
 
 .service-text {
-    font-size: 14px; /* размер шрифта */
-    line-height: 16px; /* высота строки */
-    color: #0A143A; /* цвет текста */
-    max-width: 217px; /* максимальная ширина */
-    margin-right: 14px; /* внешний отступ справа*/
+    font-size: 14px;
+    /* размер шрифта */
+    line-height: 16px;
+    /* высота строки */
+    color: #0A143A;
+    /* цвет текста */
+    max-width: 217px;
+    /* максимальная ширина */
+    margin-right: 14px;
+    /* внешний отступ справа*/
 }
 
 .footer-menu {
-    margin: 0; /* обнуляем отступы */
-    padding: 0; /* обнуляем отступы */
-    list-style: none; /* убираем дефолтный стиль списка */
-    margin-bottom: 16px; /* внешний отступ снизу*/
+    margin: 0;
+    /* обнуляем отступы */
+    padding: 0;
+    /* обнуляем отступы */
+    list-style: none;
+    /* убираем дефолтный стиль списка */
+    margin-bottom: 16px;
+    /* внешний отступ снизу*/
 }
 
 .footer-text {
-    display: inline-block; /* хз, для работы отступа */
-    font-size: 14px; /* размер шрифта */
-    line-height: 16px; /* высота строки */
-    color: #C4C4C4; /* цвет текста */
-    margin-bottom: 5px; /* внешний отступ снизу*/
+    display: inline-block;
+    /* хз, для работы отступа */
+    font-size: 14px;
+    /* размер шрифта */
+    line-height: 16px;
+    /* высота строки */
+    color: #C4C4C4;
+    /* цвет текста */
+    margin-bottom: 5px;
+    /* внешний отступ снизу*/
 }
 
 .footer-link {
     display: inline-block;
-    color: inherit; /* наследование цвета текста от родителя*/
-    text-decoration: none; /* убираем дефолтное оформление */
-    margin-bottom: 5px; /* внешний отступ снизу*/
+    color: inherit;
+    /* наследование цвета текста от родителя*/
+    text-decoration: none;
+    /* убираем дефолтное оформление */
+    margin-bottom: 5px;
+    /* внешний отступ снизу*/
+}
+
+.main-single {
+    display: flex; /* гибкий блок */
+    align-items: flex-start; /* размещение элементов */
+}
+
+.content {
+    max-width: 460px; /* максимальная ширина */
+    margin-right: 30px; /* внешний отступ справа */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.mySwiper2 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    border-radius: 10px;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1; /* прозрачность */
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%; /* ширина */
+    height: 100%; /* высота */
+    object-fit: cover; /* чтобы картинка не  обрезалась*/
+    border-radius: 3px; /* скругление */
+}
+
+
+.content-text {
+    font-size: 14px; /* размер шрифта */
+    line-height: 140%; /* высота строки */
+    /* or 20px */
+    color: #0A143A; /* цвет текста */
+}
+
+.single-price {
+    font-weight: bold; /* параметры шрифта */
+    font-size: 24px; /* размер шрифта */
+    line-height: 28px; /* высота строки */
+    margin-top: 0; /* внешний отступ сверху */
+    margin-bottom: 25px; /* внешний отступ снизу */
+    display: block; /* блочный блок */
+}
+
+.page-title {
+    margin-top: 0; /* внешний отступ сверху */
+    margin-bottom: 25px; /* внешний отступ снизу */
+}
+
+.author {
+    min-width: 264px; /* минимальная ширина */
+}
+
+.author-wrapper {
+    display: flex; /* гибкий блок */
+    align-items: center; /* выравнивание по вертикали */
+    justify-content: space-between; /* разбросать элементы по краям*/
+    margin-top: 25px; /* внешний отступ сверху */
+    margin-bottom: 30px; /* внешний отступ снизу */
+}
+
+.author-name {
+    font-weight: bold; /* параметры шрифта - болд */
+    font-size: 14px; /* размер шрифта */
+    line-height: 16px; /* высота строки */
+    color: #0A143A; /* цвет текста */
+    display: block; /* блочный блок */
+    margin-bottom: 4px; /* внешний отступ снизу */
+}
+
+.author-avatar {
+    width: 50px; /* ширина */
+    height: 50px; /* высота */
+    object-fit: cover; /* чтобы картинка не обрезалась */
+    border-radius: 50%; /* скругление */
+}
+
+.rating {
+    margin-bottom: 5px; /* внешний отступ снизу */
+
+}
+
+.rating-counter {
+    opacity: 0.5; /* прозрачность */
+    margin-left: 10px; /* внешний отступ слева */
+    /* margin-right: 110px; */
+}
+
+.author-status {
+    font-size: 12px; /* размер шрифта */
+    line-height: 14px; /* высота строки */
+}
+
+.button-block {
+    display: block; /* блочный блок */
+    width: 100%; /* ширина */
+    height: 54px; /* высота*/
+    margin-bottom: 14px; /* внешний отступ снизу */
+    border: none; /* убрать обводку(границу) */
+}
+
+.button-success {
+    background-color: #14B4BE; /* цвет фона */
+    border-radius: 5px; /* скругление */
+    color: #FFFFFF; /* цвет текста */
+
 }
